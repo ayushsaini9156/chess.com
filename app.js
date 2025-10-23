@@ -40,6 +40,7 @@ io.on("connection", (uniquesocket)=>{
         else if(uniquesocket.id === players.black){
             delete players.black;
         }
+        console.log("disconnected");
     });
 
     uniquesocket.on("move", (move)=>{
